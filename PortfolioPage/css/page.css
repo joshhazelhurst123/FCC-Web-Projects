@@ -1,0 +1,111 @@
+
+header {
+  position: relative;
+  z-index: 10;
+}
+/* Navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: blue;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  opacity: 0.5;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: Verdana, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+li {
+  float: right;
+}
+* {box-sizing:border-box}
+/* Container for skill bars */
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+.centersite{
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+.skills {  /* skill bar */
+    text-align: right; /* Right-align text */
+    padding-right: 20px; /* Add some right padding */
+    line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: white; /* White text color */
+}
+
+.html {width: 80%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.java {width: 60%; background-color: #808080;} /* Dark Grey */
+/* input form contactme section*/
+.part,
+.content {
+  text-align: center;
+  position: relative;
+  top: 10%;
+  width: 100%;
+}
+form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+form em {
+  font-family: 'Roboto', sans-serif;
+  margin-left: -200px;
+  color: #404040;
+}
+
+form input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.subfield {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #999999;
+  padding: 5px;
+}
+
+.subfield2 {
+  width: 300px;
+  height: 150px;
+  border: 1px solid #999999;
+  padding: 5px;
+  text-align: top left;
+}
+
+form button {
+  background: grey;
+  display: inline-block;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 10%;
+}
+
+form button:hover {
+  color: white;
+  font-weight: 700;
+  font-style: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none !important;
+}
