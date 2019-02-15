@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Exercise Tracker</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Exercise Tracker</span>
+  </nav>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4">
+        <div class="card border-secondary mb-3" style="max-width: 18rem;">
+          <div class="card-header">Create a New User</div>
+          <div class="card-body text-secondary">
+            <p class="card-text">POST /api/exercise/new-user</p>
+            <form action="/api/exercise/new-user" method="post">
+              <div class="form-group">
+                <input type="text" class="form-control" name="username" placeholder="Username">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <div class="card border-secondary mb-3" style="max-width: 18rem;">
+          <div class="card-header">Add exercises</div>
+          <div class="card-body text-secondary">
+            <p class="card-text">POST /api/exercise/add</p>
+            <form action="/api/exercise/add" method="post">
+              <div class="form-group">
+                <input type="text" class="form-control" name="userId" placeholder="userId*">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="description" placeholder="description*">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="duration" placeholder="duration* (mins.)">
+              </div>
+              <div class="form-group">
+                <input type="date" class="form-control" name="date" placeholder="date (yyyy-mm-dd)">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <p>
+        <strong>GET users's exercise log:</strong> GET /api/exercise/log?{userId}[&amp;from][&amp;to][&amp;limit]
+        <br>
+        <strong>{ }</strong>= required,
+        <strong>[ ]</strong>= optional
+        <br>
+        <strong>from, to</strong>= dates (yyyy-mm-dd);
+        <strong>limit</strong> = number
+        <br>
+        <br> To see all users
+        <a href="api/exercise/users ">api/exercise/users</a>
+      </p>
+
+
+    </div>
+  </div>
+  </div>
+  <footer>
+    <div>a freeCodeCamp
+      <i class="fab fa-free-code-camp"></i> Project</div>
+  </footer>
+
+  </div>
+
+  </div>
+</body>
+
+</html>
