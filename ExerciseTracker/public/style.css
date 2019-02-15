@@ -1,0 +1,15 @@
+footer {
+  list-style: none;
+  padding: 10px;
+  font-size: 25px;
+  display: block;
+  text-align: center;
+}
+
+.fa-free-code-camp {
+  color: green;
+}
+
+button:hover {
+  cursor: pointer;
+}
