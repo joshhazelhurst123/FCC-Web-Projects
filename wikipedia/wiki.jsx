@@ -56,8 +56,9 @@ class WikiViewer extends React.Component {
     return (
       <div className="plugin">
         <div className="head">
+
           <div className="left">
-            <img className="limage" alt="" src="/assets/images/wiki130x150.png" />
+            <img className="limage" alt="" src="/FCC-Web-Projects/assets/images/wiki130x150.png" />
           </div>
           <div className="right">
             <div className="title" style={title}>
