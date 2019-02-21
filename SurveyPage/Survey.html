@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Survey Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Freecodecamp Applied Responsive Web Design Projects: Build a Survey Form" />
+
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/_assets2/icons/form.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./form.css">
+
+</head>
+
+<body>
+
+  <div class="title">
+    <h1 id="title">
+      Survey Form
+    </h1>
+  </div>
+
+  <form class="myForm" method="GET" action="https://api.codetabs.com/cors-proxy/https://freecodecamp.com">
+    <div class="description">
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+    </div>
+
+    <div class="field">
+      <div class="left">
+        <label id="name-label">*Name:</label>
+      </div>
+      <div class="right">
+        <input id="name" type="text" name="name" placeholder="Enter your name" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="left">
+        <label id="email-label">*Email:</label>
+      </div>
+      <div class="right">
+        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="left">
+        <label id="number-label">*Age:</label>
+      </div>
+      <div class="right">
+        <input id="number" type="number" name="age" min="1" max="120" placeholder="Age" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="left">
+        <label>Which option best describes your current role?</label>
+      </div>
+      <div class="right">
+        <select name="roles">
+          <option value="1">Student</option>
+          <option value="2">Full Time Employment</option>
+          <option value="3">Prefer not to say</option>
+          <option value="4">Other</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="left">
+        <label>*How likely is that you would recommend freeCodeCamp to a friend?</label>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <input type="radio" name="likely" value="1">Very Likely</li>
+          <li>
+            <input type="radio" name="likely" value="2">Maybe</li>
+          <li>
+            <input type="radio" name="likely" value="3">Not Likely</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="left">
+        <label> What do you like most in FCC: </label>
+      </div>
+      <div class="right">
+        <select name="mostLike">
+          <option disabled selected value>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="openSource">Open Source</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="left">
+        <label>Things that should be improved in the future (Check all that apply)</label>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <input type="checkbox" name="future" value="1">Front-end Projects</li>
+          <li>
+            <input type="checkbox" name="future" value="2">Back-end Projects</li>
+          <li>
+            <input type="checkbox" name="future" value="3">Data Visualization</li>
+          <li>
+            <input type="checkbox" name="future" value="4">Challenges</li>
+          <li>
+            <input type="checkbox" name="future" value="5">Open Source Community</li>
+          <li>
+            <input type="checkbox" name="future" value="6">Gitter help rooms</li>
+          <li>
+            <input type="checkbox" name="future" value="7">Videos</li>
+          <li>
+            <input type="checkbox" name="future" value="8">City Meetups</li>
+          <li>
+            <input type="checkbox" name="future" value="9">Wiki</li>
+          <li>
+            <input type="checkbox" name="future" value="10">Forum</li>
+          <li>
+            <input type="checkbox" name="future" value="11">Additional Courses</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="field">
+      <div class="left">
+        <label>Any comments or Suggestions ? </label>
+      </div>
+      <div class="right">
+        <textarea>Enter yout comment here</textarea>
+      </div>
+    </div>
+
+    <div class="send">
+      <div>
+        <button class="but">Submit</button>
+      </div>
+    </div>
+
+  </form>
+
+  <br>
+  <br>
+  <br>
+
+  <!-- google-analytics -->
+  <!--#include file="/_assets2/templates/stats.html" -->
+  <!-- footer-- >
+  <!--#include file="/_assets2/templates/footer.html" -->
+
+  <!--
+  <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+  -->
+
+</body>
+
+</html>
