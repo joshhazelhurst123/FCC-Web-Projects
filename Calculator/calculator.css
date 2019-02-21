@@ -1,0 +1,124 @@
+body {
+  font-family: "arial", sans-serif;
+  background-color: lightgreen;
+  color: #404040;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.container {
+  font-family: "Orbitron","arial",sans-serif; 
+  border-radius: 5px;
+  background-color: lightblue;
+  max-width: 300px;
+  margin: 50px auto 0px auto;
+  border: 1px solid grey;
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+}
+
+.brand{
+  padding: 20px 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.display {
+  border: 2px solid #bbb;
+  border-radius: 10px;
+  height: 50px;
+  background-color: #d1dccf;
+  padding: 10px;
+  margin: 0px 20px 10px 20px;
+  text-align: right;
+}
+
+.main {
+  font-size: 2em;
+  color: #404040
+}
+.log {
+  font-size: 0.6em;
+  color: grey;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 200px;
+  max-width: 260px;
+  margin: 25px auto;
+}
+
+.control {
+  box-shadow: 0 4px #404040;
+  border-radius: 5px;
+  color : #fafafa;
+  background-color: grey;
+  width: 50px;
+  flex: 0 0 30px;
+  margin: 5px;
+  /* center text */
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.higher {
+  flex-basis: 70px;
+}
+
+.red {
+  background-color: #b42c5f;
+}
+
+.control:active {
+  background-color: grey;
+  box-shadow: 0 1px grey;
+  transform: translateY(3px);
+}
+
+.control:hover {
+  transition: all .5s linear 0;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+
+/* GENERIC */
+
+
+.imgV {
+  vertical-align: middle;
+}
+
+.txtH {
+  text-align: center;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #375EAB;
+}
+
+.jolav {
+  font-family: "arial", sans-serif;
+}
+
+
+/* HR */
+
+hr {
+  margin: 10px 10% 10px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #888, #ccc);
+}
