@@ -1,0 +1,129 @@
+@media only screen and (max-width: 540px) {
+  .articles {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+}
+
+@media only screen and (min-width: 541px) {
+  .articles {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 681px) {
+  .articles {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+body {
+  font-family: "arial", sans-serif;
+  background-color: lightblue;
+  color: #404040;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.articles {
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  -moz-column-gap: 0.5em;
+  -webkit-column-gap: 0.5em;
+  column-gap: 0.5em;
+}
+
+.article {
+  font-size: 0.9em;
+  display: inline-block;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  max-width: 260px;
+  background-color: #f5efeb;
+}
+
+.plugin {
+  text-align: center;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.right div {
+  padding: 5px 0px 3px 0px;
+}
+
+.btnRnd {
+  border: 1px solid #59d;
+  border-radius: 5px;
+  background-color: #59d;
+  padding: 5px 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btnRnd:hover {
+  background-color: #48c 
+}
+
+.btnSea {
+  border: 1px solid #6b6;
+  border-radius: 5px;
+  background-color: #6b6;
+  padding: 5px 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btnSea:hover {
+  background-color: #5a5;
+}
+
+/* GENERIC */
+
+.bold {
+  font-weight: bold;
+}
+
+.txtH {
+  text-align: center;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #375EAB;
+}
+
+.jolav {
+  font-family: "arial", sans-serif;
+}
+
+
+/* HR */
+
+hr {
+  margin: 10px 10% 10px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #888, #ccc);
+}
