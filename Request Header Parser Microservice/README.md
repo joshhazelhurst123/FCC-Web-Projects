@@ -18,3 +18,5 @@ safely store app secrets in .env (nobody can see this but you and people you inv
 Made by Glitch
 \ ゜o゜)ノ
 
+https://brass-filament.glitch.me/
+https://glitch.com/edit/#!/brass-filament?path=README.md:1:0
