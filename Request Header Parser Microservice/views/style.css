@@ -1,0 +1,43 @@
+body {
+  margin-top: 20px;
+  background-color: black;
+  margin-bottom: 2em;
+}
+
+body .container-fluid {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+body .container-fluid #instructions {
+  color: white;
+}
+
+body .container-fluid #instructions .list-group {
+  list-style: decimal inside;
+  text-align: left;
+  color: black;
+  font-size: 120%;
+}
+
+body .container-fluid #instructions .list-group-item {
+  display: list-item;
+}
+
+body .container-fluid #instructions .panel {
+  text-align: left;
+}
+
+body .container-fluid #instructions .panel-body {
+  font-size: 120%;
+}
+
+body .container-fluid #info {
+  margin-top: 30px;
+  color: white;
+}
+
+body .container-fluid #info a, body .container-fluid #info a:active, body .container-fluid #info a:hover, body .container-fluid #info a:visited, body .container-fluid #info a:active, body .container-fluid #info a:hover {
+  color: yellow;
+  text-decoration: none;
+}
